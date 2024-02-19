@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: gray;
+}
+
+main {
+	width: 300px;
+	height: 600px;
+	display: flex;
+	background-color: rgb(244, 240, 255);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	background-color: green;
+	height: 75px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+section {
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+section > article {
+	cursor: grab;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: ease-out 0.5s;
+}
+
+section > article > .choice {
+	top: 40px;
+	font-size: larger;
+	font-weight: semibold;
+	position: absolute;
+	padding: 8px 4px 8px 4px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.choice.nope {
+	color: white;
+	border: 1px solid red;
+	transform: rotate(-30deg);
+	left: 30px;
+	background-color: rgba(255, 0, 0, 0.5);
+}
+
+.choice.like {
+	color: white;
+	border: 1px solid green;
+	transform: rotate(30deg);
+	right: 30px;
+	background-color: rgba(39, 212, 111, 0.5);
+}
+
+section > article > img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	pointer-events: none;
+	border-radius: 30px;
+}
+
+footer {
+	background-color: blue;
+	height: 75px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
