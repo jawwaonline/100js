@@ -1,11 +1,3 @@
-// check for grabbing
-
-// check distance of swipe
-
-// remove element if it's too far
-
-// stop listening after grabbing
-
 const maxSwipeDistance = 170;
 let deltaX;
 let distanceX;
@@ -43,7 +35,6 @@ function startgrab(event) {
 	}
 
 	function stopGrab(event) {
-		console.log('mouseup');
 		deltaX = Math.abs(distanceX);
 		if (deltaX > maxSwipeDistance) {
 			actualElement.style.transform = `translateX(${200}px) rotate(${
