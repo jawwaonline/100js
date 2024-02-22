@@ -93,10 +93,23 @@ section > article > img {
 
 footer {
 	background-color: blue;
-	height: 75px;
+	height: 100px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
+}
+
+footer > button {
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+}
+
+footer > button > img {
+	height: 48px;
+	width: 48px;
+	stroke: none;
+	filter: drop-shadow(0 0 5px black);
 }
